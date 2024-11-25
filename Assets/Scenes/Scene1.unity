@@ -1856,6 +1856,7 @@ GameObject:
   - component: {fileID: 765964871}
   - component: {fileID: 765964870}
   - component: {fileID: 765964869}
+  - component: {fileID: 765964874}
   m_Layer: 0
   m_Name: Foreground
   m_TagString: Untagged
@@ -7637,6 +7638,18 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &765964874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765964867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7817ff4beea57840ba311b6df319bc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &778501996
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8357,7 +8370,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd37a99240621824c8cae13640dbe04d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 1
 --- !u!1 &1055344519
 GameObject:
   m_ObjectHideFlags: 3

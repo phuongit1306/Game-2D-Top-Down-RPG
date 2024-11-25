@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2449770113749512633}
   - component: {fileID: 7520495591837534462}
   - component: {fileID: 8152920178736999011}
+  - component: {fileID: 8097449127647720719}
   m_Layer: 0
   m_Name: Arrow
   m_TagString: Untagged
@@ -149,7 +150,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!96 &2449770113749512633
 TrailRenderer:
@@ -288,4 +289,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8b7bc96521565d4d8d04d4c9c527a3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 20
+  moveSpeed: 22
+  particleOnHitPrefabVFX: {fileID: 6196374475696837660, guid: fdb8af387150384449c6e3cff1675445, type: 3}
+--- !u!114 &8097449127647720719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4760150579996744922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd37a99240621824c8cae13640dbe04d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
