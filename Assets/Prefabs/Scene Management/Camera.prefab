@@ -343,8 +343,8 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -16, y: 9}
-      - {x: -16, y: -11}
+    - - {x: -15, y: 9}
+      - {x: -15, y: -11}
       - {x: 17, y: -11}
       - {x: 17, y: 9}
   m_UseDelaunayMesh: 0
@@ -530,6 +530,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4702316229835975912}
   - component: {fileID: 931403215302657173}
+  - component: {fileID: 8915109340909839871}
   m_Layer: 0
   m_Name: State-Driven Camera
   m_TagString: Untagged
@@ -590,3 +591,26 @@ MonoBehaviour:
       m_RotationOrder: 4
   m_CustomBlends: {fileID: 0}
   m_ParentHash: []
+--- !u!114 &8915109340909839871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7802792025106192193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00b2d199b96b516448144ab30fb26aed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ApplyAfter: 2
+  m_ChannelMask: 1
+  m_Gain: 1
+  m_Use2DDistance: 0
+  m_UseCameraSpace: 1
+  m_ReactionSettings:
+    m_SecondaryNoise: {fileID: 0}
+    m_AmplitudeGain: 1
+    m_FrequencyGain: 1
+    m_Duration: 1
+    m_NoiseOffsets: {x: 0, y: 0, z: 0}
