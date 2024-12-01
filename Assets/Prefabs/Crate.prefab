@@ -33,7 +33,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6799464656756729570
 SpriteRenderer:
@@ -147,4 +147,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9a58d5a4633def4887249353560dd30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goinCoinPrefab: {fileID: 8282311241268777135, guid: fe90dc442fd54444a9dd3769f64c4050, type: 3}
+  goldCoin: {fileID: 8282311241268777135, guid: fe90dc442fd54444a9dd3769f64c4050, type: 3}
+  healthGlobe: {fileID: 8282311241268777135, guid: ecdbea6764c7869429f2e56380bfd4cf, type: 3}
+  staminaGlobe: {fileID: 8282311241268777135, guid: 0a82a2e25498d60419457fb79abb74f1, type: 3}
