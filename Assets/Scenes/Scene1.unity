@@ -21189,6 +21189,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2243565100538582642, guid: d349682fde87c7a4dac6ff9c06231da8, type: 3}
+      propertyPath: fullStaminaImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 2cddd44a19b0e20479dd0c24f1fcad01, type: 3}
+    - target: {fileID: 2243565100538582642, guid: d349682fde87c7a4dac6ff9c06231da8, type: 3}
+      propertyPath: emptyStaminaImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 8c3a33fdf31d14743ab0be0d8c79cdd3, type: 3}
     - target: {fileID: 5769659148651890951, guid: d349682fde87c7a4dac6ff9c06231da8, type: 3}
       propertyPath: m_RootOrder
       value: 2
