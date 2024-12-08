@@ -10,8 +10,14 @@ public class AreaExit : MonoBehaviour
 
     private float waitToLoadTime = 1f;
 
+    private AudioManager audioManager;
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.GetComponent<PlayerController>()) {
+            audioManager.PlaySFX(audioManager.checkpoint);
             SceneManagement.Instance.SetTransitionName(sceneTransitionName);
             UIFade.Instance.FadeToBlack();
             StartCoroutine(LoadSceneRoutine());

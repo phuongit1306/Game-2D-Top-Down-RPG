@@ -11,12 +11,14 @@ public class PlayerHealth : Singleton<PlayerHealth>
     [SerializeField] private int maxHealth = 3;
     [SerializeField] private float knockBackThrustAmount = 10f;
     [SerializeField] private float damageRecoveryTime = 1f;
+    AudioManager audioManager;
 
     private Slider healthSlider;
     private int currentHealth;
     private bool canTakeDamage = true;
     private Knockback knockback;
     private Flash flash;
+
 
     const string HEALTH_SLIDER_TEXT = "Health Slider";
     const string TOWN_TEXT = "Scene1";
@@ -27,6 +29,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
 
         flash = GetComponent<Flash>();
         knockback = GetComponent<Knockback>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     private void Start() {
@@ -40,6 +43,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
         EnemyAI enemy = other.gameObject.GetComponent<EnemyAI>();
 
         if (enemy) {
+            audioManager.PlaySFX(audioManager.attackEnemies);
             TakeDamage(1, other.transform);
         }
     }
@@ -54,6 +58,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
     public void TakeDamage(int damageAmount, Transform hitTransform) {
         if (!canTakeDamage) { return; }
 
+        audioManager.PlaySFX(audioManager.attackEnemies);
         ScreenShakeManager.Instance.ShakeScreen();
         knockback.GetKnockedBack(hitTransform, knockBackThrustAmount);
         StartCoroutine(flash.FlashRoutine());
@@ -67,6 +72,7 @@ public class PlayerHealth : Singleton<PlayerHealth>
     private void CheckIfPlayerDeath() {
         if (currentHealth <= 0 && !isDead) {
             isDead = true;
+            audioManager.PlaySFX(audioManager.death);
             Destroy(ActiveWeapon.Instance.gameObject);
             currentHealth = 0;
             GetComponent<Animator>().SetTrigger(DEATH_HASH);
