@@ -12,6 +12,9 @@ public class AudioManager : MonoBehaviour
     public AudioClip checkpoint;
     public AudioClip attackEnemies;
     public AudioClip attackPlayer;
+    public AudioClip pickupMoney;
+    public AudioClip pickupStamina;
+    public AudioClip pickupHeath;
 
     //code tam thoi, neu co 2 sound de` len nhau thi se bub. phai them mot if else (instance == null, intance = this)
     private void Awake()

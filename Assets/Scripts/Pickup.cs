@@ -19,10 +19,13 @@ public class Pickup : MonoBehaviour
     [SerializeField] private float heightY = 1.5f;
     [SerializeField] private float popDuration = 1f;
 
+    AudioManager audioManager;
+
     private Vector3 moveDir;
     private Rigidbody2D rb;
 
     private void Awake() {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -79,14 +82,17 @@ public class Pickup : MonoBehaviour
         {
             case PickUpType.GoldCoin:
                 EconomyManager.Instance.UpdateCurrentGold();
+                audioManager.PlaySFX(audioManager.pickupMoney); 
                 
                 break;
             case PickUpType.HealthGlobe:
                 PlayerHealth.Instance.HealPlayer();
+                audioManager.PlaySFX(audioManager.pickupHeath); 
                 
                 break;
             case PickUpType.StaminaGlobe:
                 Stamina.Instance.RefreshStamina();
+                audioManager.PlaySFX(audioManager.pickupStamina); 
                 break;
         }
     }

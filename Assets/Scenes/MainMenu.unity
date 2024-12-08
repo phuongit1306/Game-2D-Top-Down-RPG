@@ -1499,6 +1499,18 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Audio
       objectReference: {fileID: 0}
+    - target: {fileID: 8500166352532734621, guid: 56f11039c47b4434a9f9980d9011378c, type: 3}
+      propertyPath: pickupHeath
+      value: 
+      objectReference: {fileID: 8300000, guid: cfce0cea076109f478783201b2a9f57f, type: 3}
+    - target: {fileID: 8500166352532734621, guid: 56f11039c47b4434a9f9980d9011378c, type: 3}
+      propertyPath: pickupMoney
+      value: 
+      objectReference: {fileID: 8300000, guid: abdbbfd33a46f4549987385f85c536b5, type: 3}
+    - target: {fileID: 8500166352532734621, guid: 56f11039c47b4434a9f9980d9011378c, type: 3}
+      propertyPath: pickupStamina
+      value: 
+      objectReference: {fileID: 8300000, guid: c5cb2ac29e89dbf43a9b644caaad45e6, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
