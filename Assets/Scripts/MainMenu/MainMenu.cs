@@ -9,12 +9,12 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Scene1");
     }
-    
+
     public void ExitMenu()
     {
         SceneManager.LoadScene("MainMenu");
     }
-
+    
     public void Exit()
     {
         Application.Quit();

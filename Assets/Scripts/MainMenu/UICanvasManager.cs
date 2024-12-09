@@ -5,10 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class UICanvasManager : Singleton<UICanvasManager>
 {
+    private Canvas canvas;
+
     protected override void Awake()
     {
         base.Awake();
-
+        
         destroyOnSpecificScenes = true;
         scenesToDestroy = new List<string> { "MainMenu" };
 
