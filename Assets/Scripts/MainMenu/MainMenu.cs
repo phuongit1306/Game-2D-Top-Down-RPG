@@ -5,8 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    private void Start()
+    {
+        Time.timeScale = 1;
+    }
     public void Play()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("Scene1");
     }
 
