@@ -20,22 +20,33 @@ public class AudioManager : MonoBehaviour
     public AudioClip LaserWeapon;
     public AudioClip Bow;
 
+    private static AudioManager instance;
 
-
-    //code tam thoi, neu co 2 sound de` len nhau thi se bub. phai them mot if else (instance == null, intance = this)
     private void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void Start()
     {
         musicSource.clip = background;
+        musicSource.loop = true;
         musicSource.Play();
     }
 
     public void PlaySFX(AudioClip clip)
     {
-        SFXSource.PlayOneShot(clip);
+        if (SFXSource != null && clip != null)
+        {
+            SFXSource.PlayOneShot(clip);
+        }
     }
 }
