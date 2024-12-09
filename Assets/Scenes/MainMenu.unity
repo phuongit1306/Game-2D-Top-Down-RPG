@@ -1496,6 +1496,10 @@ PrefabInstance:
       value: Audio Manager
       objectReference: {fileID: 0}
     - target: {fileID: 6424313018282952484, guid: 56f11039c47b4434a9f9980d9011378c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6424313018282952484, guid: 56f11039c47b4434a9f9980d9011378c, type: 3}
       propertyPath: m_TagString
       value: Audio
       objectReference: {fileID: 0}
