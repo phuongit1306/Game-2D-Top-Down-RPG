@@ -8,6 +8,8 @@ public class Bow : MonoBehaviour, IWeapon
     [SerializeField] private GameObject arrowPrefab;
     [SerializeField] private Transform arrowSpawnPoint;
 
+    AudioManager audioManager;
+
     readonly int FIRE_HASH = Animator.StringToHash("Fire");
 
     private Animator myAnimator;
@@ -15,6 +17,7 @@ public class Bow : MonoBehaviour, IWeapon
     private void Awake()
     {
         myAnimator = GetComponent<Animator>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     public void Attack()
@@ -22,6 +25,8 @@ public class Bow : MonoBehaviour, IWeapon
         myAnimator.SetTrigger(FIRE_HASH);
         GameObject newArrow = Instantiate(arrowPrefab, arrowSpawnPoint.position, ActiveWeapon.Instance.transform.rotation);
         newArrow.GetComponent<Projectile>().UpdateProjectileRange(weaponInfo.weaponRange);
+
+        audioManager.PlaySFX(audioManager.Bow); 
     }
 
     public WeaponInfo GetWeaponInfo()

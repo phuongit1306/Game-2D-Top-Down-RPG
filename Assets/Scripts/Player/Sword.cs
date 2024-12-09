@@ -9,6 +9,8 @@ public class Sword : MonoBehaviour, IWeapon
     [SerializeField] private float swordAttackCD = .5f;
     [SerializeField] private WeaponInfo weaponInfo;
 
+    AudioManager audioManager;
+
     private Transform weaponCollider;
     private Animator myAnimator;
 
@@ -16,6 +18,7 @@ public class Sword : MonoBehaviour, IWeapon
 
     private void Awake() {
         myAnimator = GetComponent<Animator>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     private void Start() {
@@ -36,6 +39,8 @@ public class Sword : MonoBehaviour, IWeapon
         weaponCollider.gameObject.SetActive(true);
         slashAnim = Instantiate(slashAnimPrefab, slashAnimSpawnPoint.position, Quaternion.identity);
         slashAnim.transform.parent = this.transform.parent;
+        
+        audioManager.PlaySFX(audioManager.attackPlayer); 
     }
 
     public void DoneAttackingAnimEvent() {

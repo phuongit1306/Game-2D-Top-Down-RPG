@@ -1500,6 +1500,22 @@ PrefabInstance:
       value: Audio
       objectReference: {fileID: 0}
     - target: {fileID: 8500166352532734621, guid: 56f11039c47b4434a9f9980d9011378c, type: 3}
+      propertyPath: Bow
+      value: 
+      objectReference: {fileID: 8300000, guid: 0e16d6b7da22444439078580ee280c85, type: 3}
+    - target: {fileID: 8500166352532734621, guid: 56f11039c47b4434a9f9980d9011378c, type: 3}
+      propertyPath: dash
+      value: 
+      objectReference: {fileID: 8300000, guid: f11db4559b3ffff45b62e9327fc5535d, type: 3}
+    - target: {fileID: 8500166352532734621, guid: 56f11039c47b4434a9f9980d9011378c, type: 3}
+      propertyPath: Laser
+      value: 
+      objectReference: {fileID: 8300000, guid: de812cfb519929c4aad9d296f655c81d, type: 3}
+    - target: {fileID: 8500166352532734621, guid: 56f11039c47b4434a9f9980d9011378c, type: 3}
+      propertyPath: LaserWeapon
+      value: 
+      objectReference: {fileID: 8300000, guid: b103f9d4e304eeb4291787b9d002dc35, type: 3}
+    - target: {fileID: 8500166352532734621, guid: 56f11039c47b4434a9f9980d9011378c, type: 3}
       propertyPath: pickupHeath
       value: 
       objectReference: {fileID: 8300000, guid: cfce0cea076109f478783201b2a9f57f, type: 3}
@@ -1507,6 +1523,10 @@ PrefabInstance:
       propertyPath: pickupMoney
       value: 
       objectReference: {fileID: 8300000, guid: abdbbfd33a46f4549987385f85c536b5, type: 3}
+    - target: {fileID: 8500166352532734621, guid: 56f11039c47b4434a9f9980d9011378c, type: 3}
+      propertyPath: attackPlayer
+      value: 
+      objectReference: {fileID: 8300000, guid: 2b21ef916f6943c439b71a7c74568878, type: 3}
     - target: {fileID: 8500166352532734621, guid: 56f11039c47b4434a9f9980d9011378c, type: 3}
       propertyPath: pickupStamina
       value: 

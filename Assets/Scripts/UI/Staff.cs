@@ -8,12 +8,15 @@ public class Staff : MonoBehaviour, IWeapon
     [SerializeField] private GameObject magicLaser;
     [SerializeField] private Transform magicLaserSpawnPoint;
 
+    AudioManager audioManager;
+
     private Animator myAnimator;
 
     readonly int ATTACK_HASH = Animator.StringToHash("Attack");
 
     private void Awake() {
         myAnimator = GetComponent<Animator>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     private void Update() {
@@ -23,6 +26,8 @@ public class Staff : MonoBehaviour, IWeapon
 
     public void Attack() {
         myAnimator.SetTrigger(ATTACK_HASH);
+
+        audioManager.PlaySFX(audioManager.LaserWeapon); 
     }
 
     public void SpawnStaffProjectileAnimEvent() {
