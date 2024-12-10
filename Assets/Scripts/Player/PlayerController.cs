@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : Singleton<PlayerController>
 {
@@ -21,6 +22,8 @@ public class PlayerController : Singleton<PlayerController>
     private SpriteRenderer mySpriteRender;
     private Knockback knockback;
     private float startingMoveSpeed;
+
+    public Text WINTEXT;
 
     private bool facingLeft = false;
     private bool isDashing = false;
