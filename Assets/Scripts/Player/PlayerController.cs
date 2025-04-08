@@ -13,6 +13,9 @@ public class PlayerController : Singleton<PlayerController>
     [SerializeField] private TrailRenderer myTrailRenderer;
     [SerializeField] private Transform weaponCollider;
 
+
+
+//audio
     AudioManager audioManager;
 
     private PlayerControls playerControls;
