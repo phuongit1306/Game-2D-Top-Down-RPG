@@ -18,12 +18,12 @@ public class Pickup : MonoBehaviour
     [SerializeField] private AnimationCurve animCurve;
     [SerializeField] private float heightY = 1.5f;
     [SerializeField] private float popDuration = 1f;
-
+    
     AudioManager audioManager;
 
     private Vector3 moveDir;
     private Rigidbody2D rb;
-
+//Get den Compoment AudioManager
     private void Awake() {
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         rb = GetComponent<Rigidbody2D>();
