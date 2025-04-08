@@ -183,7 +183,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'WELCOME!!!
 
-    GAME 2D UNITY DACN'
+    GAME 2D TopDown Shooter'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: aa8bc67cd6422344cbe6831cca79dd33, type: 2}
   m_sharedMaterial: {fileID: 6780404067476171405, guid: aa8bc67cd6422344cbe6831cca79dd33, type: 2}

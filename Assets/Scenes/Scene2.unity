@@ -20009,6 +20009,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ghost_Level1 Variant (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8127443817165051415, guid: 0fc60aeed301ece4b837e0ab7516c0c7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20607,6 +20611,10 @@ PrefabInstance:
     - target: {fileID: 8127443817165051415, guid: 0fc60aeed301ece4b837e0ab7516c0c7, type: 3}
       propertyPath: m_Name
       value: Ghost_Level1 Variant (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8127443817165051415, guid: 0fc60aeed301ece4b837e0ab7516c0c7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -60803,6 +60811,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ghost_Level1 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 8127443817165051415, guid: 0fc60aeed301ece4b837e0ab7516c0c7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -65105,6 +65117,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 748833918083280078, guid: 8b26baa3d9ebd734fa6969ceb11700a1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4dcd81d1c97b7cb46bd260e57f9dd8cf, type: 3}
+    - target: {fileID: 1169141171162646544, guid: 8b26baa3d9ebd734fa6969ceb11700a1, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6ad56ab1e17951d4dbd5cff697ae8d1e, type: 3}
     - target: {fileID: 2715749316016649905, guid: 8b26baa3d9ebd734fa6969ceb11700a1, type: 3}
       propertyPath: m_PresetInfoIsWorld
       value: 0
@@ -65276,6 +65296,10 @@ PrefabInstance:
     - target: {fileID: 7035248367692304723, guid: 8b26baa3d9ebd734fa6969ceb11700a1, type: 3}
       propertyPath: m_SortingOrder
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7698819225196416661, guid: 8b26baa3d9ebd734fa6969ceb11700a1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8097542859508769438, guid: 8b26baa3d9ebd734fa6969ceb11700a1, type: 3}
       propertyPath: m_AnchorMax.y
