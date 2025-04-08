@@ -22114,6 +22114,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UICanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 3718006991307088400, guid: 8b26baa3d9ebd734fa6969ceb11700a1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4149414523464153345, guid: 8b26baa3d9ebd734fa6969ceb11700a1, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -22311,6 +22315,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 335773921186782151, guid: 48b6f5f1a9c7062408e0c405a3785200, type: 3}
+      propertyPath: orthographic size
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 931403215302657173, guid: 48b6f5f1a9c7062408e0c405a3785200, type: 3}
       propertyPath: m_ChildCameras.Array.size
       value: 0
@@ -22382,6 +22390,10 @@ PrefabInstance:
     - target: {fileID: 9055550243581071729, guid: 48b6f5f1a9c7062408e0c405a3785200, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.99491197
+      objectReference: {fileID: 0}
+    - target: {fileID: 9055550243581071729, guid: 48b6f5f1a9c7062408e0c405a3785200, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.938851
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22544,6 +22556,10 @@ PrefabInstance:
     - target: {fileID: 6425833440356413631, guid: 4c760445021641e47a5a2d7ecd499930, type: 3}
       propertyPath: m_Name
       value: Twinkle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6425833440356413631, guid: 4c760445021641e47a5a2d7ecd499930, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6534125888104529198, guid: 4c760445021641e47a5a2d7ecd499930, type: 3}
       propertyPath: m_SortingOrder
@@ -22771,6 +22787,10 @@ PrefabInstance:
     - target: {fileID: 6001966562922856886, guid: d349682fde87c7a4dac6ff9c06231da8, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001966562922856886, guid: d349682fde87c7a4dac6ff9c06231da8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6001966562922856886, guid: d349682fde87c7a4dac6ff9c06231da8, type: 3}
       propertyPath: m_TagString
@@ -27685,6 +27705,10 @@ PrefabInstance:
     - target: {fileID: 5892668165019906233, guid: ba2d9d6123628cd42b53601587746c27, type: 3}
       propertyPath: m_Name
       value: Managers
+      objectReference: {fileID: 0}
+    - target: {fileID: 5892668165019906233, guid: ba2d9d6123628cd42b53601587746c27, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5997318963553772857, guid: ba2d9d6123628cd42b53601587746c27, type: 3}
       propertyPath: m_RootOrder
