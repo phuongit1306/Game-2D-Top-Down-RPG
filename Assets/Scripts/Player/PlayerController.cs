@@ -16,6 +16,7 @@ public class PlayerController : Singleton<PlayerController>
 
 
 //audio
+    [Header("Audio")]
     AudioManager audioManager;
 
     private PlayerControls playerControls;
@@ -25,9 +26,9 @@ public class PlayerController : Singleton<PlayerController>
     private SpriteRenderer mySpriteRender;
     private Knockback knockback;
     private float startingMoveSpeed;
-
+    private float dashTime = 0.2f;
+    //note Text when hide UI Win
     public Text WINTEXT;
-
     private bool facingLeft = false;
     private bool isDashing = false;
 
