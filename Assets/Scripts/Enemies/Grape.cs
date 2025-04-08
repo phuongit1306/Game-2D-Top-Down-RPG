@@ -9,6 +9,7 @@ public class Grape : MonoBehaviour, IEnemy
     private Animator myAnimator;
     private SpriteRenderer spriteRenderer;
 
+    //bat lui khi bi attack
     readonly int ATTACK_HASH = Animator.StringToHash("Attack");
 
     private void Awake() {
@@ -17,16 +18,21 @@ public class Grape : MonoBehaviour, IEnemy
     }
 
     public void Attack() {
+
         myAnimator.SetTrigger(ATTACK_HASH);
 
-        if (transform.position.x - PlayerController.Instance.transform.position.x < 0) {
+        if (transform.position.x - PlayerController.Instance.transform.position.x < 0) 
+        {
             spriteRenderer.flipX = false;
-        } else {
+        } 
+        else
+        {
             spriteRenderer.flipX = true;
         }
     }
 
-    public void SpawnProjectileAnimEvent() {
+    public void SpawnProjectileAnimEvent() 
+    {
         Instantiate(grapeProjectilePrefab, transform.position, Quaternion.identity);
     }
 }
